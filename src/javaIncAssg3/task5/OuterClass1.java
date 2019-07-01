@@ -1,8 +1,8 @@
 package javaIncAssg3.task5;
 
-public class OuterClass {
-    OuterClass(){
-        System.out.println("Outer class");
+public class OuterClass1 {
+    OuterClass1(){
+        System.out.println("Outer class 1");
     }
     static class InnerClass1{
         InnerClass1(String hello) {
@@ -10,16 +10,7 @@ public class OuterClass {
         }
     }
 
-    static class InnerClass2 extends InnerClass1{
-        InnerClass2(String hello){
-            super(hello);
-            System.out.println("Innerclass 2 says " +hello);
-        }
-    }
 
-    public static void main(String[] args){
-        new OuterClass();
-        new InnerClass1("hello");
-        new InnerClass2("hey!");
-    }
+
+
 }
