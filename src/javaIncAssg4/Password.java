@@ -18,14 +18,14 @@ public class Password {
                 isSplCharPresent = true;
         }
 
-        if(!isNumberPresent)
+        if(!isNumberPresent && !isCapitalLtrPresent &&  !isSplCharPresent) {
             throw new NumberNotFoundException();
+           // throw new CapitalLetterNotFoundException();
+            //  throw new SplCharNotFoundException();
 
-        if(!isCapitalLtrPresent)
-            throw  new CapitalLetterNotFoundException();
+            // Cant throw all 3 Exceptions at once
+        }
 
-        if(!isSplCharPresent)
-            throw new SplCharNotFoundException();
     }
 
     public static void main(String[] args){
