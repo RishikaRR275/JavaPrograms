@@ -1,2 +1,0 @@
-hello! This is the input text documet from which i'll find out the frequency of all the characters.
-
